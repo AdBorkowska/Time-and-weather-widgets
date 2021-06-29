@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="picker">Picker</div>
+    <header>
+    <div class="city-search-container">
+        <input type="text" class="city-search" placeholder="Enter location">
+    </div>
+    </header>
+    <main>
     <div class="widgets">
     <div class="clock">
         <div class="hand" id="hour"></div>
@@ -30,11 +35,12 @@
 
     <div class="weather">
         <div class="date" id="date"></div>
-        <div id="showWX"></div>
-        <div id="showdescription"></div>
+        <div id="showWX" class="temp"></div>
+        <div id="showdescription" class="description"></div>
         <div id="weather-icon"></div>
     </div> 
-</div>
+    </div>
+    </main>
 
     <script src="/script.js"></script>
 </body>

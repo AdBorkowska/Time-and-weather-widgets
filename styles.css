@@ -4,24 +4,49 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, green, rgb(198, 243, 171));
+    background-image: url("./backgrounds.jpg");
+    background-size: cover;
     min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.picker {
-    position: absolute;
-    text-align: center;
-    left: 47%;
-    top: 15%;
+header {
+    margin-top: 100px;
+}
+
+.city-search-container {
     font-size: 2rem;
+    width: 380px;
+    margin: 0 auto;
+}
+
+.city-search-container input {
+    width: 100%;
+    max-width: 380px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5%;
+    border-bottom: 3px solid #555454;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+}
+
+.city-search-container input:focus {
+    background-color: rgba(255,255,255,0.6);
 }
 
 .widgets {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 100vh;
+    margin-bottom: 10%;
 }
 
 .clock {
@@ -29,9 +54,9 @@ body {
     height: 300px;
     background-color: rgba(255,255,255, 0.6);
     border-radius: 50%;
-    border: 6px solid darkgreen;
+    border: 6px solid #313131;
     position: relative;
-    box-shadow: #023a10 2px 2px 5px;
+    box-shadow: 0px 0px 10px 1px rgb(19, 19, 44);
 }
 
 .clock .number {
@@ -101,21 +126,42 @@ body {
     background-color: red;
 }
 
-
 .weather {
-    border: 3px solid green;
+    margin-top: 20px;
+    color: #313131;
+    box-shadow: 0px 0px 10px 1px rgb(19, 19, 44);
     height: 300px;
     width: 300px;
-    padding: 50px;
+    padding: 25px 25px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.5rem;
+    text-align: center;
     border-radius: 5%;
     background-color: rgba(255,255,255,0.4);
+    overflow: hidden;
 }
 
 .weather > div {
     margin: 5px;
+}
+
+.date {
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.temp {
+    font-weight: 900;
+    font-size: 48px;
+    text-shadow: 2px 4px rgba(85, 78, 78, 0.6)
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
 }
