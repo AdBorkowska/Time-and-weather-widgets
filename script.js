@@ -34,6 +34,7 @@ function setQuery(ev) {
         getResult(searchCity.value);
         document.getElementById("city").innerHTML = `${searchCity.value}, `
         console.log(searchCity.value)
+        searchCity.value = "";
     }
 }
 
@@ -66,5 +67,6 @@ function getResult(query) {
     console.log(countryCode);
     document.getElementById("country").innerHTML = `${countryCode}`
 })
+.catch(error => alert("Podane miasto nie istnieje, proszę spróbować ponownie"))
 }
 

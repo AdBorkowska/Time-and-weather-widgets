@@ -32,7 +32,7 @@ header {
     background-color: rgba(255,255,255,0.3);
     border-radius: 5%;
     border-bottom: 3px solid #555454;
-    color: #313131;
+    color: #252525;
     font-size: 20px;
     font-weight: 500;
     transition: 0.2s ease-out;
@@ -71,9 +71,8 @@ header {
 }
 
 .date {
-    padding-top: 30px;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
@@ -87,4 +86,8 @@ header {
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
+}
+
+p {
+    font-size: 17px;
 }
